@@ -29,11 +29,11 @@ module.exports = {
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
         exclude: /node_modules/
       },
-      {
-        test: /\.(png|svg|jpe?g|gif)$/,
-        use: ['file-loader'],
-        exclude: /node_modules/
-      }
+      // { 오히려 file-loader를 지워야 이미지가 적용된다...!?
+      //   test: /\.(png|svg|jpe?g|gif)$/,
+      //   use: ['file-loader'],
+      //   exclude: /node_modules/
+      // }
     ]
   },
   plugins: [
