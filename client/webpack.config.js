@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   target: 'node',
   mode: 'development',
-  entry: './public/javascripts/index.js',
+  entry: './src/index.js',
   devtool: "source-map", //크롬에서 디버깅 가능하도록 원본코드같이 bundle
   output: {
     clean: true,
